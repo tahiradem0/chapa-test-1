@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #00f2fe;
+  text-shadow: 0px 0px 15px #00f2fe;
+}
+
+.title span {
+  color: #1991f9;
+  text-shadow: 0px 0px 15px #1991f9;
+}
+
+.subtitle {
+  margin: 10px 0 30px;
+  font-size: 1.2rem;
+  color: #d4d4d4;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 25px rgba(0,0,0,0.3);
+  animation: slideUp 1s ease-in-out;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px #00f2fe;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
