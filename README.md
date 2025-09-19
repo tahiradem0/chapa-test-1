@@ -1,12 +1,17 @@
+Ah! The problem is spaces in the image filename and the folder path. GitHub Markdown cannot parse spaces in image paths, and also it’s better to use a folder like assets/ instead of public/ for README images.
+
+Here’s the corrected version of your README with a working image:
+
+
+---
+
 # Chapa Gateway v1
 
 A simple Node.js & Express payment integration using **Chapa API**.
 
----
-
 ## Screenshot
 
-![Code Editor Screenshot]( ./public/Screenshot_20250919_020742_Code Editor.png )
+![Code Editor Screenshot](assets/Screenshot_20250919_020742_Code_Editor.png)
 
 A simple Node.js & Express payment integration using **Chapa API**. This project allows users to pay for a subscription (demo: 1000 ETB) and view a success page after the payment is completed.
 
@@ -26,8 +31,8 @@ A simple Node.js & Express payment integration using **Chapa API**. This project
 
 - **Backend:** Node.js, Express
 - **Frontend:** HTML, CSS, Vanilla JavaScript
-- **Payment Gateway:** [Chapa](https://chapa.co)
-- **Dependencies:** 
+- **Payment Gateway:** [Chapa](https://chapa.co/)
+- **Dependencies:**
   - `express`
   - `node-fetch`
   - `cors`
@@ -159,3 +164,19 @@ MIT License
 ---
 
 Made with ❤️ by Tahir Adem
+
+---
+
+✅ **Key fixes**:
+
+1. Moved image to `assets/` folder.
+2. Removed spaces in filename (`Screenshot_20250919_020742_Code_Editor.png`).
+3. Updated Markdown path to `assets/Screenshot_20250919_020742_Code_Editor.png`.
+4. Cleaned formatting so GitHub renders it properly.  
+
+---
+
+If you want, I can also **make it “GitHub-friendly short version”** that looks modern and cool for young devs.  
+
+Do you want me to do that?
+
