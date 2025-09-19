@@ -1,9 +1,12 @@
-// server.js
 import express from "express";
 import fetch from "node-fetch";
 import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
+import dotenv from "dotenv";
+
+// Load environment variables from .env
+dotenv.config();
 
 // Fix __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
@@ -16,8 +19,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "./public"))); // serve frontend files
 
-// Chapa secret key (demo)
-const CHAPA_SECRET_KEY = "CHASECK_TEST-YkRejBwttPzdnqoVQsWJqVePVOFMQRxf";
+// Chapa secret key from .env
+const CHAPA_SECRET_KEY = process.env.CHAPA_SECRET_KEY;
 
 // ✅ Create Chapa payment
 app.post("/create-payment", async (req, res) => {
@@ -62,7 +65,6 @@ app.post("/create-payment", async (req, res) => {
     res.status(500).json({ error: "Internal server error", details: err.message });
   }
 });
-
 
 // ✅ Verify payment
 app.get("/verify-payment", async (req, res) => {
