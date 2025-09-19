@@ -11,7 +11,7 @@ A simple Node.js & Express payment integration using **Chapa API**.
 
 ## Screenshot
 
-![Code Editor Screenshot](assets/Screenshot_20250919_020742_Code_Editor.png)
+![Code Editor Screenshot](./public/Screensho.png)
 
 A simple Node.js & Express payment integration using **Chapa API**. This project allows users to pay for a subscription (demo: 1000 ETB) and view a success page after the payment is completed.
 
