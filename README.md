@@ -43,8 +43,8 @@ chapa-gateway-v1/ ├─ public/ │  ├─ style.css │  ├─ success.html 
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd chapa-gateway-v1
+git clone https://github.com/tahiradem0/chapa-test-1.git
+cd chapa-test-1
 
 2. Install dependencies
 
