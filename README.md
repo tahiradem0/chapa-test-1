@@ -1,10 +1,13 @@
-# Chapa Gateway v-1.0
+
+# Chapa Gateway v1
+
+A simple Node.js & Express payment integration using **Chapa API**.
 
 ---
-![Description of the image](public/Screenshot_20250919_020742_Code Editor.png)
 
----
+## Screenshot
 
+![Code Editor Screenshot](public/Screenshot_20250919_020742_Code Editor.png)
 
 A simple Node.js & Express payment integration using **Chapa API**. This project allows users to pay for a subscription (demo: 1000 ETB) and view a success page after the payment is completed.
 
