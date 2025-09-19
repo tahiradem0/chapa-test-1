@@ -1,4 +1,3 @@
-
 # Chapa Gateway v1
 
 A simple Node.js & Express payment integration using **Chapa API**.
@@ -7,7 +6,7 @@ A simple Node.js & Express payment integration using **Chapa API**.
 
 ## Screenshot
 
-![Code Editor Screenshot](public/Screenshot_20250919_020742_Code Editor.png)
+![Code Editor Screenshot](assets/Screenshot_20250919_020742_Code_Editor.png)
 
 A simple Node.js & Express payment integration using **Chapa API**. This project allows users to pay for a subscription (demo: 1000 ETB) and view a success page after the payment is completed.
 
@@ -39,10 +38,11 @@ A simple Node.js & Express payment integration using **Chapa API**. This project
 
 ## Project Structure
 
-chapa-gateway-v1/ ├─ public/ │  ├─ style.css │  ├─ success.html │  └─ index.html ├─ server.js ├─ package.json └─ README.md
+chapa-gateway-v1/ ├─ assets/ │  └─ Screenshot_20250919_020742_Code_Editor.png ├─ public/ │  ├─ style.css │  ├─ success.html │  └─ index.html ├─ server.js ├─ package.json └─ README.md
 
 - `server.js`: Main Express server handling payment creation and verification.
 - `public/`: Contains all frontend files (HTML, CSS, JS).
+- `assets/`: Contains images for README or documentation.
 - `success.html`: Page displayed after successful payment.
 
 ---
@@ -61,15 +61,16 @@ npm install
 
 3. Set Chapa secret key
 
-Replace the demo key in server.js with your live/test Chapa secret key:
+Create a .env file in the root:
 
-const CHAPA_SECRET_KEY = "YOUR_CHAPA_SECRET_KEY";
+CHAPA_SECRET_KEY=YOUR_CHAPA_SECRET_KEY
+PORT=3000
 
 4. Start the server
 
 node server.js
 
-The server will run on http://localhost:3000.
+Server runs on http://localhost:3000.
 
 5. Test the payment
 
@@ -158,4 +159,3 @@ MIT License
 ---
 
 Made with ❤️ by Tahir Adem
-
